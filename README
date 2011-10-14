@@ -1,0 +1,22 @@
+An experiment in computationally writing and compiling academic papers based around machine learning. 
+
+Currently working on: 
+- Automated scraping of academic articles
+
+Completed:
+
+- Initial user interface (web based) and initial hacky backed 
+- Set up Git repo (10/13/11)
+
+- 
+
+Flow:
+1) User enters a topic string. Ex) Canadian macro economic policy (Possibly add subtopics to refine search)
+2) InstantPaper references online journal and academic sources and delivers a rating (0-100) on the availability of information on the chosen topic
+3) Using a PageRank-esq algorithm, create a hierachy of academic papers based on imporance. Scrape content from top 100 papers on topics and using machine learning find commonly cited argument
+4) Extrapelate 3-4 top 'themes' for each topic. These will act as individual body paragraphs
+5) Rank indexed papers context and relevence to themes and add 5-6 'points' to each theme
+6) Intelligently gather author information so we can get sentences like: "Scottish political economist Adam Smith wrote in the  'Wealth of Nations' that "arument/quote..." (Could also cross reference this information w/ Wikipedia)
+7) Allow the user to select reference and citation format
+8) Have a few other user settings: max word count, limit citations to 'n' length, user name, class, professor...etc.
+9) Output as PDF/DOC/LaTeX
